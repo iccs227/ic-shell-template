@@ -16,6 +16,12 @@ To start the project, you should clone the starting repo and it should contain `
 
 The look and feel of icsh should be similar to that of other UNIX shells, such as bash, tcsh, csh, etc. For example, your shell’s work loop should produce a prompt, e.g., `icsh $`, accept input from the user, and then produce another prompt. Messages should be written to the screen as necessary, and the prompt should be delayed when user input shouldn’t be accepted, as necessary. Needless to say, your shell should take appropriate action in response to the user’s input.
 
+> **⚠️ Important Architecture Requirement**
+> Your code must be designed in a **modular fashion**. You are expected to separate program features into separated classes/files (e.g., separate header and source files for job control, command parsing, built-ins, etc.) rather than putting everything into one file.
+>
+> **Note:** `icsh.c` is provided only as a starting entry point; do not write your entire shell implementation inside this single file.
+
+
 ---
 
 ## Milestone 1: Interactive command-line interpreter
